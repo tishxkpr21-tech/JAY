@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Jay 🎂</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap">
+<style>
+:root{--ink:#fff;--card:rgba(255,255,255,.12);--line:rgba(255,255,255,.28);--pink:#ff5fa2;--gold:#ffd166;--cyan:#5ee7ff;--violet:#8b5cf6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:'Nunito',system-ui,sans-serif;background:#1a0b3b;
+background:radial-gradient(circle at 15% 10%,#ff5fa2aa,transparent 40%),radial-gradient(circle at 85% 20%,#5ee7ffaa,transparent 38%),radial-gradient(circle at 50% 100%,#ffd16688,transparent 45%),linear-gradient(160deg,#2a0f5e,#6a1b9a 55%,#c2185b);
+background-attachment:fixed;overflow-x:hidden}
+.stars span{position:fixed;width:3px;height:3px;background:#fff;border-radius:50%;animation:tw 3s infinite ease-in-out;opacity:.7}
+@keyframes tw{50%{opacity:.1;transform:scale(.5)}}
+.bunting{position:fixed;top:0;left:0;right:0;height:46px;display:flex;justify-content:space-around;z-index:3;pointer-events:none}
+.bunting i{width:0;height:0;border-left:18px solid transparent;border-right:18px solid transparent;border-top:38px solid var(--c);transform-origin:top;animation:sway 3s ease-in-out infinite alternate;filter:drop-shadow(0 4px 4px #0004)}
+@keyframes sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+.balloon{position:fixed;bottom:-140px;width:56px;height:70px;border-radius:50% 50% 48% 48%;background:radial-gradient(circle at 30% 28%,#fff9,transparent 30%),var(--c);animation:rise var(--d) linear infinite;z-index:1;opacity:.85}
+.balloon::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:70px;background:#fff8}
+@keyframes rise{to{transform:translateY(-130vh) rotate(8deg)}}
+.confetti{position:fixed;top:-20px;width:10px;height:14px;z-index:2;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(112vh) rotate(720deg)}}
+main{position:relative;z-index:4;max-width:760px;margin:0 auto;padding:78px 18px 50px;text-align:center}
+.hb{font-family:'Lilita One',Impact,sans-serif;font-size:clamp(2.6rem,11vw,5.4rem);line-height:1;margin:0;letter-spacing:.02em;
+background:linear-gradient(90deg,var(--gold),var(--pink),var(--cyan),var(--gold));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite;filter:drop-shadow(0 4px 0 #0005)}
+@keyframes shine{to{background-position:300% 0}}
+.name{display:inline-block;font-family:'Lilita One',Impact,sans-serif;font-size:clamp(3.6rem,18vw,8rem);line-height:1.1;margin:.1em 0 .2em;color:#fff;text-shadow:0 0 18px var(--pink),0 0 40px var(--violet),4px 5px 0 #0006;animation:pop 2.4s ease-in-out infinite}
+@keyframes pop{50%{transform:scale(1.07) rotate(-2deg)}}
+.sub{font-weight:800;opacity:.9;margin:0 0 22px}
+/* cake */
+.stage{position:relative;height:300px;margin:10px auto 6px;width:260px}
+.plate{position:absolute;bottom:0;left:-20px;right:-20px;height:22px;border-radius:50%;background:linear-gradient(#fff,#cfd8ff);box-shadow:0 10px 25px #0006}
+.tier{position:absolute;left:50%;transform:translateX(-50%);border-radius:14px 14px 10px 10px;box-shadow:inset 0 -10px 0 #0002,0 6px 14px #0004}
+.t1{bottom:14px;width:260px;height:92px;background:repeating-linear-gradient(90deg,#7b3f1d 0 22px,#8d4a24 22px 44px)}
+.t2{bottom:104px;width:190px;height:74px;background:linear-gradient(#ff8fc2,#ff5fa2)}
+.t3{bottom:176px;width:124px;height:56px;background:linear-gradient(#fff,#ffe3f0)}
+.drip{position:absolute;top:0;left:0;right:0;height:26px;background:radial-gradient(circle at 12px 0,#fff 14px,transparent 15px) 0 0/34px 26px repeat-x;border-radius:14px 14px 0 0}
+.t1 .drip{background-image:radial-gradient(circle at 12px 0,#ff9fc8 15px,transparent 16px)}
+.t3 .drip{background-image:radial-gradient(circle at 12px 0,#ffd166 11px,transparent 12px)}
+.dots{position:absolute;inset:34px 0 10px;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) 0 0/22px 22px}
+.cherry{position:absolute;left:50%;top:-14px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff9,transparent 35%),#e11d48;display:none}
+.candles{position:absolute;bottom:232px;left:50%;transform:translateX(-50%);display:flex;gap:26px}
+.candle{position:relative;width:14px;height:50px;border-radius:4px;background:repeating-linear-gradient(-45deg,#fff 0 8px,var(--c) 8px 16px);box-shadow:inset -3px 0 #0002}
+.candle::before{content:"";position:absolute;left:50%;top:-6px;width:2px;height:8px;background:#333;transform:translateX(-50%)}
+.flame{position:absolute;left:50%;top:-34px;width:18px;height:30px;margin-left:-9px;border-radius:50% 50% 50% 50%/65% 65% 35% 35%;background:radial-gradient(ellipse at 50% 80%,#fff 8%,#ffe066 35%,#ff9f1c 70%,transparent 72%);box-shadow:0 0 22px 8px #ffb84d99;transform-origin:50% 100%;animation:flick .18s infinite alternate;transition:opacity .35s,transform .35s}
+.candle:nth-child(2) .flame{animation-delay:.07s}.candle:nth-child(3) .flame{animation-delay:.12s}.candle:nth-child(4) .flame{animation-delay:.03s}
+@keyframes flick{from{transform:scale(1,1) rotate(-3deg)}to{transform:scale(.88,1.1) rotate(3deg)}}
+.out .flame{opacity:0;animation:none;transform:scale(.2)}
+.smoke{position:absolute;left:50%;top:-30px;width:6px;height:6px;border-radius:50%;background:#fff8;opacity:0}
+.out .smoke{animation:smoke 1.8s ease-out forwards}
+@keyframes smoke{from{opacity:.8;transform:translate(-50%,0)}to{opacity:0;transform:translate(-30%,-70px) scale(5)}}
+button{font:800 1rem 'Nunito',system-ui,sans-serif;color:#3b0a45;border:0;padding:13px 26px;border-radius:999px;cursor:pointer;background:linear-gradient(135deg,var(--gold),#ff9f7a);box-shadow:0 6px 0 #b3541e,0 12px 24px #0005;transition:transform .12s,box-shadow .12s}
+button:active{transform:translateY(5px);box-shadow:0 1px 0 #b3541e}
+button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+/* message */
+.letter{position:relative;margin-top:44px;padding:34px 26px 30px;text-align:left;background:var(--card);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:2px solid var(--line);border-radius:28px;box-shadow:0 20px 50px #0005,inset 0 0 0 6px #ffffff10}
+.letter::before{content:"💗";position:absolute;top:-24px;left:50%;transform:translateX(-50%);font-size:2.2rem;background:#6a1b9a;border:2px solid var(--line);border-radius:50%;width:56px;height:56px;display:grid;place-items:center}
+.letter p{margin:0 0 1.1em;font-size:clamp(1rem,3.6vw,1.15rem);line-height:1.65;font-weight:600}
+.letter p.big{font-family:'Lilita One',Impact,sans-serif;font-weight:400;font-size:clamp(1.3rem,5.4vw,1.9rem);line-height:1.25;color:var(--gold);text-shadow:2px 2px 0 #0005}
+.letter b{color:var(--cyan)}
+.sign{text-align:center;font-family:'Lilita One',Impact,sans-serif;font-size:clamp(1.3rem,5vw,1.8rem);margin:1.3em 0 .3em!important;background:linear-gradient(90deg,var(--pink),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.twins{display:flex;justify-content:center;gap:8px;font-size:1.8rem;margin-top:10px}
+.slide{display:none}.slide.on{display:block;animation:slin .55s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes slin{from{opacity:0;transform:translateX(40px) scale(.96)}to{opacity:1;transform:none}}
+.nav{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:34px;padding:10px 12px;border-radius:999px;background:rgba(20,8,50,.6);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:2px solid var(--line);z-index:6}
+.nav button{padding:10px 18px;font-size:.95rem}
+.nav .hide{visibility:hidden}
+.dots{display:flex;gap:8px}.dots i{width:10px;height:10px;border-radius:50%;background:#fff5;transition:.3s}.dots i.on{background:var(--gold);width:28px;border-radius:6px}
+button.alt{margin:8px 6px 0;background:linear-gradient(135deg,var(--cyan),#8b5cf6);color:#fff;box-shadow:0 6px 0 #4527a0,0 12px 24px #0005}
+button.alt:active{box-shadow:0 1px 0 #4527a0}
+.heart{position:fixed;bottom:-30px;font-size:1.8rem;z-index:5;animation:hrise 3s ease-out forwards;pointer-events:none}
+@keyframes hrise{to{transform:translateY(-105vh) rotate(20deg);opacity:0}}
+.btns{text-align:center}
+.letter.game::before{content:"🎮"}
+.game{text-align:center}.game p{text-align:center}
+.hud{display:flex;justify-content:space-between;font-weight:800;font-size:1.1rem;margin-bottom:10px}
+.arena{position:relative;height:300px;overflow:hidden;border-radius:18px;background:#0003;border:2px dashed var(--line);touch-action:manipulation;margin-bottom:14px}
+.amsg{position:absolute;inset:0;display:grid;place-items:center;padding:14px;font-family:'Lilita One',Impact,sans-serif;font-size:1.5rem;color:var(--gold);pointer-events:none}
+.pb{position:absolute;bottom:-70px;width:50px;height:62px;border-radius:50%;background:radial-gradient(circle at 30% 28%,#fff9,transparent 30%),var(--c);cursor:pointer;display:grid;place-items:center;font-size:1.6rem;animation:pbup var(--t) linear forwards}
+@keyframes pbup{to{transform:translateY(-390px)}}
+button:disabled{opacity:.6;cursor:default}
+.mem{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+.card{aspect-ratio:1;border-radius:14px;display:grid;place-items:center;font-size:2rem;font-weight:800;cursor:pointer;user-select:none;background:linear-gradient(135deg,var(--violet),var(--pink));border:2px solid var(--line);transition:transform .2s}
+.card:active{transform:scale(.94)}.card.f{background:#ffffff30}.card.m{background:linear-gradient(135deg,#7CFFB2aa,#5ee7ffaa)}
+.ptr{font-size:2rem;margin-bottom:-22px;position:relative;z-index:2}
+.wheel{position:relative;width:240px;height:240px;margin:0 auto 16px;border-radius:50%;border:6px solid #fff;background:conic-gradient(#ff5fa2 0 60deg,#ffd166 0 120deg,#5ee7ff 0 180deg,#8b5cf6 0 240deg,#7CFFB2 0 300deg,#ff9f7a 0 360deg);box-shadow:0 10px 30px #0006;transition:transform 4s cubic-bezier(.15,.8,.2,1)}
+.wheel span{position:absolute;left:50%;top:50%;font-size:1.9rem;margin:-16px 0 0 -16px}
+#wres{min-height:3.2em}
+@media (prefers-reduced-motion:reduce){.balloon,.bunting i,.name,.hb,.stars span{animation:none}}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+<div class="bunting" id="bunting"></div>
+<main>
+<section class="slide on" id="s0">
+  <h1 class="hb">HAPPY BIRTHDAY</h1>
+  <div class="name">JAY</div>
+  <p class="sub">🎉 Make a wish, twin 🎉</p>
+
+  <div class="stage" id="stage">
+    <div class="plate"></div>
+    <div class="tier t1"><div class="drip"></div></div>
+    <div class="tier t2"><div class="drip"></div><div class="dots"></div></div>
+    <div class="tier t3"><div class="drip"></div></div>
+    <div class="candles">
+      <div class="candle" style="--c:#ff5fa2"><div class="flame"></div><div class="smoke"></div></div>
+      <div class="candle" style="--c:#5ee7ff"><div class="flame"></div><div class="smoke"></div></div>
+      <div class="candle" style="--c:#ffd166"><div class="flame"></div><div class="smoke"></div></div>
+      <div class="candle" style="--c:#8b5cf6"><div class="flame"></div><div class="smoke"></div></div>
+    </div>
+  </div>
+  <button id="blow" type="button">Blow out the candles 🕯️</button>
+</section>
+<section class="slide letter" id="s1">
+    <p class="big">HAPPIEST BIRTHDAY TO MY TWINNNN 😭💗</p>
+    <p>BROOO WHERE DO I EVEN START... I’m genuinely so glad we became friends. It’s actually crazy how we’ve got so many memories together... almost <b>NO brain cell</b> PHHAHAHAAHAHAAAA, annoying each other THO your gf is lowkey mineeeee. I swear sometimes I don’t even need to explain myself to you... you just <b>GET IT JAY.</b> And that’s what makes you so special to me. All those little moments, venting, silly arguments BCOZ YOU ARE MORE AMAZING and everything in between mean so much more than you probably realise.</p>
+</section>
+<section class="slide letter" id="s2">
+    <p>I hope you know how much you mean to me. May we two be twins in every life timeee. I genuinely wish nothing but the best for you... I hope you achieve everything you’ve ever wanted, meet the right people, stay happy and never lose that spark of yours.</p>
+    <p>AND PLEASEEE, don’t ever become boring because I still have a lifetime of annoying you left 😭😭. Here’s to more memories and many more birthdays together.</p>
+    <p class="sign">LOVE YOU SO MUCHHH TWINNNN 💗🫂<br>HAVE THE BEST DAY EVER. YOU DESERVE IT ALLLLL</p>
+    <div class="twins">👯‍♂️🎂🎁🎈</div>
+    <div class="btns"><button class="alt" id="hug" type="button">Send a hug 🫂</button><button class="alt" id="play" type="button">Play games 🎮</button></div>
+  </section>
+<section class="slide letter game" id="g1">
+  <p class="big">Game 1: Pop the Balloons 🎈</p>
+  <p>Pop as many as you can in 20 seconds, twin!</p>
+  <div class="hud"><span>Score: <b id="sc">0</b></span><span>Time: <b id="tm">20</b></span></div>
+  <div class="arena" id="arena"><div class="amsg">Tap Start, then pop the balloons!</div></div>
+  <button id="pstart" type="button">Start 🎈</button>
+</section>
+<section class="slide letter game" id="g2">
+  <p class="big">Game 2: Memory Match 🧠</p>
+  <p>Find all 6 pairs… if you have a brain cell 😭</p>
+  <div class="mem" id="mem"></div>
+  <p id="mmsg" style="font-weight:800">Moves: 0</p>
+  <button id="mshuf" type="button">Shuffle 🔀</button>
+</section>
+<section class="slide letter game" id="g3">
+  <p class="big">Game 3: Twin Dare Wheel 🎡</p>
+  <p>Spin it and do whatever it says!</p>
+  <div class="ptr">▼</div>
+  <div class="wheel" id="wheel"></div>
+  <p id="wres" style="font-weight:800">Your dare shows up here…</p>
+  <button id="spin" type="button">Spin 🎡</button>
+  <div class="btns"><button class="alt" id="replay" type="button">Replay the card 🔁</button></div>
+</section>
+<nav class="nav"><button id="back" type="button">← Back</button><div class="dots" id="dots"></div><button id="next" type="button">Open my wish 💌</button></nav>
+</main>
+<script>
+(function(){
+var cols=['#ff5fa2','#ffd166','#5ee7ff','#8b5cf6','#7CFFB2','#ff9f7a'];
+var st=document.getElementById('stars'),bu=document.getElementById('bunting');
+for(var i=0;i<40;i++){var s=document.createElement('span');s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';st.appendChild(s);}
+for(var j=0;j<14;j++){var f=document.createElement('i');f.style.setProperty('--c',cols[j%cols.length]);f.style.animationDelay=(j*.18)+'s';bu.appendChild(f);}
+for(var k=0;k<7;k++){var b=document.createElement('div');b.className='balloon';b.style.left=(5+k*14)+'%';b.style.setProperty('--c',cols[k%cols.length]);b.style.setProperty('--d',(14+k*2.5)+'s');b.style.animationDelay=(-k*3)+'s';document.body.appendChild(b);}
+function burst(n){for(var i=0;i<n;i++){var c=document.createElement('div');c.className='confetti';c.style.left=Math.random()*100+'vw';c.style.background=cols[i%cols.length];c.style.borderRadius=Math.random()>.5?'50%':'2px';c.style.animationDuration=(2.5+Math.random()*3)+'s';c.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(c);setTimeout(function(el){el.remove()},6500,c);}}
+var stage=document.getElementById('stage'),btn=document.getElementById('blow'),out=false;
+btn.addEventListener('click',function(){out=!out;stage.classList.toggle('out',out);btn.textContent=out?'Relight them 🔥':'Blow out the candles 🕯️';if(out)burst(110);});
+burst(60);
+var sl=[].slice.call(document.querySelectorAll('.slide')),dots=document.getElementById('dots'),bk=document.getElementById('back'),nx=document.getElementById('next'),cur=0;
+sl.forEach(function(){dots.appendChild(document.createElement('i'));});
+function go(n){cur=Math.max(0,Math.min(sl.length-1,n));sl.forEach(function(s,i){s.classList.toggle('on',i===cur);});[].forEach.call(dots.children,function(d,i){d.classList.toggle('on',i===cur);});bk.classList.toggle('hide',cur===0);nx.classList.toggle('hide',cur===sl.length-1);nx.textContent=cur===0?'Open my wish 💌':cur===1?'Next 💌':cur===2?'Games 🎮':'Next game 🎮';window.scrollTo({top:0,behavior:'smooth'});if(cur===2)burst(90);}
+bk.addEventListener('click',function(){go(cur-1);});
+nx.addEventListener('click',function(){go(cur+1);});
+document.getElementById('replay').addEventListener('click',function(){go(0);});
+document.getElementById('hug').addEventListener('click',function(){var h=['💗','🫂','💖','🎂','🎈'];for(var i=0;i<18;i++){var e=document.createElement('div');e.className='heart';e.textContent=h[i%h.length];e.style.left=Math.random()*95+'vw';e.style.animationDelay=Math.random()*.9+'s';document.body.appendChild(e);setTimeout(function(x){x.remove();},4200,e);}});
+var $=function(i){return document.getElementById(i);};
+$('play').addEventListener('click',function(){go(3);});
+var sc=0,tl=0,ti,si,ar=$('arena'),best=0;
+function endPop(){clearInterval(ti);clearInterval(si);ar.innerHTML='<div class="amsg">Time! You popped '+sc+' 🎈'+(sc>0&&sc>=best?' New best! 🏆':'')+'</div>';best=Math.max(best,sc);$('pstart').disabled=false;$('pstart').textContent='Play again 🎈';if(sc>0)burst(50);}
+$('pstart').addEventListener('click',function(){sc=0;tl=20;$('sc').textContent=0;$('tm').textContent=20;ar.innerHTML='';this.disabled=true;ti=setInterval(function(){tl--;$('tm').textContent=tl;if(tl<=0)endPop();},1000);si=setInterval(function(){var b=document.createElement('div');b.className='pb';b.style.left=Math.random()*(ar.clientWidth-50)+'px';b.style.setProperty('--c',cols[Math.floor(Math.random()*cols.length)]);b.style.setProperty('--t',(2.2+Math.random()*1.6)+'s');b.addEventListener('pointerdown',function(){if(b.dataset.x)return;b.dataset.x=1;sc++;$('sc').textContent=sc;b.textContent='💥';b.style.background='none';b.style.animationPlayState='paused';setTimeout(function(){b.remove();},180);});b.addEventListener('animationend',function(){b.remove();});ar.appendChild(b);},430);});
+var mem=$('mem'),first=null,lock=false,mv=0,mt=0;
+function deal(){var e=['🎂','🎁','🎈','🎉','🍰','🥳'],a=e.concat(e).sort(function(){return Math.random()-.5;});mem.innerHTML='';mv=0;mt=0;first=null;lock=false;$('mmsg').textContent='Moves: 0';a.forEach(function(v){var c=document.createElement('div');c.className='card';c.textContent='?';c.addEventListener('click',function(){if(lock||c===first||c.classList.contains('m'))return;c.classList.add('f');c.textContent=v;if(!first){first=c;return;}mv++;$('mmsg').textContent='Moves: '+mv;if(first.dataset.v===v){first.classList.add('m');c.classList.add('m');first=null;mt++;if(mt===6){$('mmsg').textContent='🎉 Done in '+mv+' moves!';burst(70);}}else{lock=true;var p=first;first=null;setTimeout(function(){p.classList.remove('f');c.classList.remove('f');p.textContent='?';c.textContent='?';lock=false;},700);}});c.dataset.v=v;mem.appendChild(c);});}
+$('mshuf').addEventListener('click',deal);deal();
+var dares=['Text your twin: "NO brain cell" + a 😭','Sing oni chan in voice not📞','Send me the funniest memory of us 😭','Roast me… in a nicest way hehe💗','Plan the next roblox with meee 🗓️','Say "we can share my gf" in the chat 🫂'],R=0,busy=false,wh=$('wheel');
+['🧠','📞','😭','💗','🗓️','🫂'].forEach(function(l,i){var s=document.createElement('span');s.textContent=l;s.style.transform='rotate('+(i*60+30)+'deg) translateY(-88px)';wh.appendChild(s);});
+$('spin').addEventListener('click',function(){if(busy)return;busy=true;$('wres').textContent='Spinning…';R+=1440+Math.floor(Math.random()*360);wh.style.transform='rotate('+R+'deg)';setTimeout(function(){var i=Math.floor(((360-R%360)%360)/60);$('wres').textContent='🎯 '+dares[i];busy=false;burst(30);},4100);});
+go(0);
+})();
+</script>
+</body>
+</html>
